@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zindex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .parent,
+      .parent1,
+      .parent2 {
+        width: 1200px;
+        border: 1px solid;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .parent > div {
+        width: 20%;
+      }
+      .parent > div:nth-child(1) {
+        background-color: red;
+      }
+      .parent > div:nth-child(2) {
+        background-color: blue;
+      }
+      .parent > div:nth-child(3) {
+        background-color: green;
+      }
+
+      .parent1 > div {
+        width: 20%;
+        float: left;
+      }
+      .parent1 > div:nth-child(1) {
+        background-color: red;
+      }
+
+      .parent1 > div:nth-child(2) {
+        background-color: blue;
+      }
+      .parent1 > div:nth-child(3) {
+        background-color: green;
+      }
+
+      .parent2 > div {
+        width: 20%;
+      }
+      .parent2 > div:nth-child(1) {
+        background-color: red;
+        float: left;
+      }
+      .parent2 > div:nth-child(2) {
+        background-color: blue;
+        margin: 0 20%;
+        float: left;
+      }
+      .parent2 > div:nth-child(3) {
+        background-color: green;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+    <div class="parent1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+    <div class="parent2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>
