@@ -5,19 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  
 <style>
-    video{width: 100vw;height: 100vh;object-fit: cover;}
+    *{margin: 0;padding: 0;}
+    a{text-decoration: none;color: #fff;}
+    ul{list-style: none;}
+    header{width: 100%;max-width: 1857px;height: 100vh;background-image: url(video/webp.webp);background-repeat: no-repeat;background-size: cover;position: relative;margin: 0 auto;}
+    header .menu{width: 90%;display: flex;justify-content: space-between;color: #fff;margin:0 auto;padding-top: 30px;}
+    header .menu a img{filter: invert();width: 24px;height: 24px;vertical-align: middle;}
+    header .menu p{font-size: 50px;}
+    header .txt{line-height: 120px;position: absolute;bottom: 10%;left: 10%;}
+    header .txt h1{color: #fff;font-size: 120px;font-weight: normal;}
+    header .txt a{font-size: 16px;color: #fff;border: 1px solid #fff;padding: 15px 25px;border-radius: 5px;}
+
+    main{width: 70%;margin:100px auto;}
+    main .new{display: flex;justify-content: space-between;}
+    main .new li{flex: 0 1 30%;position: relative;overflow: hidden;border-radius: 10px;}
+    main .new li a img{width: 100%;object-fit: cover;transition: 0.5s;}
+    main .new li p{font-size: 16px;font-weight: normal;position: absolute;bottom: 10%;left: 10%;color: #fff;font-weight: 600;
+        display: flex;justify-content: space-between;width: 80%;}
+    main .new li p span img{width: 24px;vertical-align:middle;filter: invert();}
+    main .new li:hover a img{transform: scale(1.2);}
+
+    .model{width: 70%;margin: 100px auto;}
+    .model h2{}
 </style>
 </head>
 <body>
     <div class="wrap">
 <header>
-    <video autoplay muted loop>
-        <source src="video/PorscheSouthKorea.mp4" type="video/mp4">
-    </video>
-
-</header>
+<div class="menu">
+    <a href="#"><img src="images/three.svg" alt="menu">메뉴</a>
+    <p>Porsche</p>
+    <a href="#"><img src="images/login.svg" alt="login"></a>
     
+</div>
+ <div class="txt">
+     <h1>Two icons. <br>One designer.</h1>
+     <a href="#">시계 속의 911을 만나보세요</a>
+ </div>
+</header>
+<main>
+    <ul class="new">
+    <li>
+        <a href="#"><img src="images/new1.jpg" alt="new"></a>
+        <p>The new all-electric Macan.<span><img src="images/r-arrow.svg" alt="arrow"></span></p>   
+    </li> 
+    <li>
+        <a href="#"><img src="images/new2.jpg" alt="new"></a>
+        <p>Taycan.<span><img src="images/r-arrow.svg" alt="arrow"></span></p> 
+    </li>
+       <li>
+        <a href="#"><img src="images/new3.jpg" alt="new"></a>
+        <p>The new Panamera.<span><img src="images/r-arrow.svg" alt="arrow"></span></p> 
+    </li>
+    </ul>
+</main>    
+<div class="model">
+    <h2>MODEL</h2>
+
+</div>
     </div>
 </body>
 </html>
