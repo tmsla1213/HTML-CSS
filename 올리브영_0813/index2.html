@@ -12,6 +12,9 @@
         html{scroll-behavior: smooth;}
         .platforms{width: 90%;max-width: 1420px;margin: 0 auto;display: flex;}
         .platforms .left{width: 40%;position: sticky;top: 100px;height: 100%;}
+        .platforms .left ul li{line-height: 30px;}
+        .platforms .left h1{font-size: 54px;margin-bottom: 50px;}
+        .platforms .left ul li a{color: #565e65;font-weight: bold;font-size: 18px;}
         .platforms .right{flex: 1;}
         .platforms .right ul li::before{content: "";display: block;width: 100%;height: 100px;}
         .platforms .right ul li .con{display: flex;}
@@ -20,15 +23,22 @@
         .platforms .right ul li .con .info .inner{width: 85%;margin: 0 auto;}
         .platforms .right ul li .con .info .inner img{width: 100%;object-fit: cover;}
 
-        .foot{width: 100%;display: flex;justify-content: space-between;margin: 100px 30px;font-weight: bold;
-        border-top: 1px solid #ccc;border-bottom:1px solid #ccc;padding: 60px 30px;box-sizing: border-box;}
+        .foot{width: 100%;display: flex;justify-content: space-evenly;margin: 100px auto;font-weight: bold;
+        border-top: 1px solid #ccc;border-bottom:1px solid #ccc;padding: 60px 30px;box-sizing:border-box;}
         .foot .footmenu{width: 70%;display: flex;}
         .foot >ul>li{flex: 1 1 20%;}
         .foot ul li li p{margin: 10px 0;}
         .foot ul li h6{font-size: 16px;margin-bottom: 20px;}
         .foot ul li a{color: #666;font-size: 15px;}
-        .foot >p{width: 20%;font-size: 14px;}
-       footer{padding: 500px;}
+        .foot >p{width: 15%;font-size: 14px;}
+
+        
+       footer{width: 90%;margin: 0 auto;margin-bottom: 80px;}
+       footer >ul{display: flex;justify-content: space-between;}
+       footer >ul .add ul li{display: flex; gap: 20px;font-size: 14px;color: #6f7880;}
+       footer >ul .icon ul{display: flex;gap:20px}
+       footer >ul .icon ul li>p{font-size: 12px;color: #6f7880;text-align: center;}
+       footer >ul .icon ul li p img{width: 28px;height: 28px;}
 
        @media screen and (max-width:1169px) {
         .platforms{flex-direction: column;}
@@ -164,6 +174,51 @@
     <p>CJ그룹 계열사 바로가기 </p>
 </div>
 <footer>
+<ul>
+    <li class="add">
+        <ul>  
+            <li>
+                <p>개인정보처리방침</p>
+                <p>법적고지</p>
+                <p>이메일 무단 수집 금지</p>
+            </li>
+            <li>
+                <p>씨제이올리브영 주식회사</p>
+                <p>서울특별시 용사누 한강대로 372, 24층(동자동,KDK타워) </p>
+                <p>ⓒ CJ OliveYoung. All Rights Reserved</p>
+            </li>
+            <li>
+                <p>대표자 : 이선정</p>
+                <p>사업자등록번호 : 809-81-01574</p>
+            </li>
+        </ul>
+    </li>
+    <li class="icon">
+        <ul>
+            <li>
+                <p><img src="https://corp.oliveyoung.com/img/footer/youtube-1e74e5ff08794d27baab78e2f66fe256.png" alt=""></p>
+                <p>youtube</p>
+            </li>
+            <li>
+                <p><img src="https://corp.oliveyoung.com/img/footer/instagram-ba92e7e9275d78bbda090d3efa44f4fb.png" alt=""></p>
+                <p>Official</p>
+            </li>
+            <li>
+                <p><img src="https://corp.oliveyoung.com/img/footer/instagram-ba92e7e9275d78bbda090d3efa44f4fb.png" alt=""></p>
+                <p>Global</p>
+            </li>
+            <li>
+                <p><img src="https://corp.oliveyoung.com/img/footer/tech-4f9e8c0d62154fa96e57fb07fb06b6d8.png" alt=""></p>
+                <p>Blog</p>
+            </li>
+            <li>
+                <p><img src="https://corp.oliveyoung.com/img/footer/linkedin-05d4e8aa75793bcfa9d30c1b146b8f2a.png" alt=""></p>
+                <p>Linkedln</p>
+            </li>
+        </ul>
+    </li>
+</ul>
+
 </footer>
 </body>
 </html>
