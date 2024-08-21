@@ -10,7 +10,7 @@
     *{margin: 0;padding: 0;}
     a{text-decoration: none;color: #fff;}
     ul{list-style: none;}
-    header{width: 100%;max-width: 1857px;height: 100vh;background-image: url(video/webp.webp);background-repeat: no-repeat;background-size: cover;position: relative;margin: 0 auto;}
+    header{width: 100%;max-width: 1857px;height: 100vh;background-image: url(video/webv.webp);background-repeat: no-repeat;background-size: cover;position: relative;margin: 0 auto;}
     header .menu{width: 90%;display: flex;justify-content: space-between;color: #fff;margin:0 auto;padding-top: 30px;}
     header .menu a img{filter: invert();width: 24px;height: 24px;vertical-align: middle;}
     header .menu p{font-size: 50px;}
@@ -27,8 +27,23 @@
     main .new li p span img{width: 24px;vertical-align:middle;filter: invert();}
     main .new li:hover a img{transform: scale(1.2);}
 
-    .model{width: 70%;margin: 100px auto;}
-    .model h2{}
+    .model{width: 100%;margin: 100px auto;}
+    .model h2{text-align: center;}
+    .model ul{margin: 100px auto; display: flex;width: 70%;flex-wrap: wrap;gap: 20px;}
+    .model ul li{flex: 1 1 40%;height: 822px;border-radius: 10px;position: relative;background-size:cover;background-repeat: no-repeat;background-position: center;}
+    .model ul li >p{width: 150px;height: 50px;}
+    .model ul li >p img{width: 100%;height: 100%;filter: invert();}
+    .model ul li .Mtxt{font-weight: lighter;color: #fff;position: absolute;bottom: 20px;left: 50%;transform:translateX(-50%);width: 90%;}
+    .model ul li .Mtxt p:nth-child(3){border: 1px solid #fff;color: #000;background: #fff;padding: 15px 100px;text-align: center;border-radius: 5px;}
+    .model ul li .Mtxt p:nth-child(4){border: 1px solid #fff;margin-top: 15px;padding: 20px 100px;text-align: center; border-radius: 5px;}
+
+    .model ul li:nth-child(1){background-image: url(https://images-porsche.imgix.net/-/media/B83205B021D245D9A1C77E6B28167777_A4CDE73AE4C34B30B9EA61D5D815943D_BX24I3HOX0040_desktop?w=960&q=85&auto=format);}
+    .model ul li:nth-child(2){background-image: url(https://images-porsche.imgix.net/-/media/DE9B7F8D1C6948F1AF6B4114B75C3F3A_21F9585F38A6419A9C461B4EBFFB28AD_Nevada---Desktop?w=960&q=85&auto=format);}
+    .model ul li:nth-child(3){background-image: url(https://images-porsche.imgix.net/-/media/62DF4F9D51314C5D9A30FEB70E2B8A57_13535058FFDF493DAF4B94209C64EB19_CarRange_Taycan_Desktop_new_24?w=960&q=85&auto=format);}
+    .model ul li:nth-child(4){background-image: url(https://images-porsche.imgix.net/-/media/8A7678973F714C3195009D39F906C785_F0D9A35EDED14CBC93EF35FB279057BC_CarRange_Panamera__desktop_new_24?w=960&q=85&auto=format);}
+    .model ul li:nth-child(5){background-image: url(https://images-porsche.imgix.net/-/media/7222692576E74959AF596EB7D3CE4ABD_D21170C34F15480C978B105E50A23BEB_model-overview-berlin-desktop?w=960&q=85&auto=format);}
+    .model ul li:nth-child(6){background-image: url(https://images-porsche.imgix.net/-/media/30F1725256BD457999C7C3ABB8B5A5D6_262DBFC6902D4A1296502AF41E560B0A_Cayenne_Carrange?w=960&q=85&auto=format);}
+
 </style>
 </head>
 <body>
@@ -63,7 +78,63 @@
 </main>    
 <div class="model">
     <h2>MODEL</h2>
+    <ul>
+        <li>
+            <p><img src="https://cdn.ui.porsche.com/porsche-design-system/model-signatures/718.min.493a9e3509d6e263fa2207150082def5.svg" alt=""></p>
+            <div class="Mtxt">
+                <h1>드라이빙 다이내믹스를 지배하는 미드 엔진 로드스터.</h1>
+                <p>130,500,000 KRW 부터</p>
+                <p>나만의 718 만들기</p>
+                <p>모든 718모델</p>
+            </div>
+        </li>
+        <li>
+            <p><img src="https://cdn.ui.porsche.com/porsche-design-system/model-signatures/911.min.b68f913216168583298ccf83f1a6b8d5.svg" alt=""></p>
+            <div class="Mtxt">
+                <h1>시대를 초월한 디자인과 수평대향 리어 엔진의 강력한 퍼포먼스로 완선된 스포츠카의 아이콘.</h1>
+                <p>229,800,000 KRW 부터</p>
+                <p>나만의 911 만들기</p>
+                <p>모든 911 모델</p>
+            </div>
+        </li>
+        <li>
+            <p><img src="https://cdn.ui.porsche.com/porsche-design-system/model-signatures/taycan.min.df444c6f4cc1f627ceaf1b02584d6bea.svg" alt=""></p>
+            <div class="Mtxt">
+                <h1>포르쉐의 정신과 포르쉐의 미래를 드러내는 순수 전기 스포츠카</h1>
+                <p>129,900,000 KRW 부터</p>
+                <p>나만의 타이칸 만들기</p>
+                <p>모든 타이칸 모델</p>
+            </div>
+        </li>
+        <li>
+            <p><img src="https://cdn.ui.porsche.com/porsche-design-system/model-signatures/panamera.min.6dae8095186567168f85c145845f090c.svg" alt=""></p>
+            <div class="Mtxt">
+                <h1>포르쉐 특유의 역동성과 탁월한 편안함이 공존하는 4인승 스포츠 럭셔리 세단.</h1>
+                <p>176,700,000 KRW 부터</p>
+                <p>나만의 파나메라 만들기</p>
+                <p>모든 파나메라 모델</p>
+            </div>
+        </li>
+        <li>
+            <p><img src="https://cdn.ui.porsche.com/porsche-design-system/model-signatures/macan.min.a1844f4c8d23b75e371745e9b8eb49b9.svg" alt=""></p>
+            <div class="Mtxt">
+                <h1>일상을 스포티하게 바꿔줄 짜릿한 선택.</h1>
+                <p>99,100,000 KRW 부터</p>
+                <p>나만의 마칸 만들기</p>
+                <p>모든 마칸 모델</p>
+            </div>
+        </li>
+        <li>
+            <p><img src="https://cdn.ui.porsche.com/porsche-design-system/model-signatures/cayenne.min.25562011631a831516f91ec31d144104.svg" alt=""></p>
+            <div class="Mtxt">
+                <h1>5시트의 여유로움, 강렳나 디자인, 압도적인 퍼포먼스를 자랑하는 스포츠카.</h1>
+                <p>139,800,000 KRW 부터</p>
+                <p>나만의 카이엔 만들기</p>
+                <p>모든 카이엔 모델</p>
+            </div>
+        </li>
 
+    </ul>
 </div>
     </div>
 </body>
