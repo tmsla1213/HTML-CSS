@@ -30,8 +30,8 @@
     .model{width: 100%;margin: 100px auto;}
     .model h2{text-align: center;}
     .model ul{margin: 100px auto; display: flex;width: 70%;flex-wrap: wrap;gap: 20px;}
-    .model ul li{flex: 1 1 40%;height: 822px;border-radius: 10px;position: relative;background-size:cover;background-repeat: no-repeat;background-position: center;}
-    .model ul li >p{width: 150px;height: 50px;}
+    .model ul li{flex: 1 1 40%;height: 822px;border-radius: 10px;position: relative;background-size:100%;background-repeat: no-repeat;background-position: center;transition: 0.5s;}
+    .model ul li >p{width: 150px;height: 50px;margin-left: 10px;}
     .model ul li >p img{width: 100%;height: 100%;filter: invert();}
     .model ul li .Mtxt{font-weight: lighter;color: #fff;position: absolute;bottom: 20px;left: 50%;transform:translateX(-50%);width: 90%;}
     .model ul li .Mtxt p:nth-child(3){border: 1px solid #fff;color: #000;background: #fff;padding: 15px 100px;text-align: center;border-radius: 5px;}
@@ -43,11 +43,28 @@
     .model ul li:nth-child(4){background-image: url(https://images-porsche.imgix.net/-/media/8A7678973F714C3195009D39F906C785_F0D9A35EDED14CBC93EF35FB279057BC_CarRange_Panamera__desktop_new_24?w=960&q=85&auto=format);}
     .model ul li:nth-child(5){background-image: url(https://images-porsche.imgix.net/-/media/7222692576E74959AF596EB7D3CE4ABD_D21170C34F15480C978B105E50A23BEB_model-overview-berlin-desktop?w=960&q=85&auto=format);}
     .model ul li:nth-child(6){background-image: url(https://images-porsche.imgix.net/-/media/30F1725256BD457999C7C3ABB8B5A5D6_262DBFC6902D4A1296502AF41E560B0A_Cayenne_Carrange?w=960&q=85&auto=format);}
+    .model ul li:hover{background-size: 105%;}
 
 
     .find{width: 100%;display: flex;}
-    .find>div{width: 60%;margin: 0 auto;}
-    .find>p{flex: 1;}
+    .find div{width: 60%;margin-left: 400px;}
+    .find div h1{font-size: 37.27px;}
+    .find div p{font-size: 16px}
+    .find div:nth-child(3){margin-top: 50px;}
+   
+    .find>p img{width: 910.81px;}
+    
+    .stories{width: 1857px;margin: 0 auto;}
+    .stories h1{text-align: center;margin-bottom: 80px;font-size: 50px}
+    .stories img{object-fit: cover;width: 100%;height: 100%;}
+    .media>ul{width: 1469.86px;height: 680.88px;display: flex;gap: 8px; flex-wrap: nowrap; margin: 0 auto;  }
+    .media>ul>li{flex: 1 1 25%;}
+    .media>ul>li .y{margin-top: 8px;}
+    .media .story{display: flex;gap: 8px;}
+
+    .discover{width: 1857px;margin: 0 auto;}
+    .discover ul{display: flex;}
+    .discover ul li img{width: 24px;height: 24px;}
 </style>
 </head>
 <body>
@@ -147,9 +164,59 @@
             <h1>포르쉐 인증 중고차 찾기</h1>
             <p>포르쉐 파인더(Porsche Finder)로 꿈의 포르쉐를 쉽고 편리하게 검색해보십시<br>오. 현재 위치를 입력하면 주변의 포르쉐 인증 중고차를 한눈에 확인할 수 있습<br>니다.</p>
             <p>검색을 원하는 위치를 입력하시오.</p>
-            <p><input type="search" placeholder="도시 또는 우편번호를 입력하십시오"></p>
+            <p><span><img src="images/mirror.svg" alt="mirror"></span><input type="search" placeholder="도시 또는 우편번호를 입력하십시오"></p>
         </div>
         <p><img src="images/find.jpg" alt="find"></p>
+    </div>
+
+    <div class="stories">
+        <h1>Social Media Stories</h1>
+    <div class="media">
+        <ul>
+            <li>
+                <ul>
+                    <li><img src="images/story1.jpg" alt="story1"></li>
+                    <li>
+                        <ul class="story">
+                            <li><img src="images/story5.jpg" alt="story5"></li>
+                            <li><img src="images/story6.jpg" alt="story6"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <ul class="story">
+                            <li><img src="images/story2.jpg" alt="story2"></li>
+                            <li><img src="images/story3.jpg" alt="story3"></li>
+                        </ul>
+                    </li>
+                    <li class="y"><img src="images/story7.jpg" alt="story7"></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><img src="images/story4.jpg" alt="story4"></li>
+                    <li>
+                        <ul class="story">
+                            <li><img src="images/story8.jpg" alt="story8"></li>
+                            <li><img src="images/story9.jpg" alt="story9"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+      </div>
+
+    <div class="discover">
+        <h1>DISCOVER</h1>
+    <ul>
+        <li><p>Porsche E-Performance<span><img src="images/arrow.svg" alt=""></span></p></li>
+        <li><p>Porsche Connect<span><img src="images/arrow.svg" alt=""></span></p></li>
+        <li><p>순정 부품 가격 조회<span><img src="images/arrow.svg" alt=""></span></p></li>
+    </ul>
+    </div>
     </div>
 </body>
 </html>
