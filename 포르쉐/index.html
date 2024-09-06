@@ -48,9 +48,13 @@
 
     .find{width: 100%;display: flex;}
     .find div{width: 60%;margin-left: 400px;}
-    .find div h1{font-size: 37.27px;}
+    .find div h1{font-size: 37.27px;margin-bottom: 10px;}
     .find div p{font-size: 16px}
-    .find div:nth-child(3){margin-top: 50px;}
+    .find div p:nth-child(3){margin-top: 40px;}
+    .find div p:nth-child(4){position: relative;} 
+    .find div p:nth-child(4) input{padding: 20px 250px 20px 50px;text-align: left;width: 100%;border: 2px solid #000;border-radius: 5px;}
+    .find div p:nth-child(4) span{position: absolute;top: 25%;left: 10px;width: 20px;height: 20px;}
+    .find div p:nth-child(4) span img{object-fit: cover;width: 30px;height: 30px;}
    
     .find>p img{width: 910.81px;}
     
@@ -63,7 +67,11 @@
     .media .story{display: flex;gap: 8px;}
 
     .discover{width: 1857px;margin: 0 auto;}
-    .discover ul{display: flex;}
+    .discover h1{text-align: center;}
+    .discover ul{width: 100%;height: 100%;display: flex;margin: 0 auto;}
+    .discover ul li:first-child{background-image: url(images/discover1.jfif);}
+    .discover ul li:nth-child(2){background-image: url(images/discover2.jfif);}
+    .discover ul li:nth-child(3){background-image: url(images/discover3.avif);}
     .discover ul li img{width: 24px;height: 24px;}
 </style>
 </head>
@@ -208,15 +216,25 @@
             </li>
         </ul>
       </div>
-
+    </div>
     <div class="discover">
         <h1>DISCOVER</h1>
     <ul>
-        <li><p>Porsche E-Performance<span><img src="images/arrow.svg" alt=""></span></p></li>
-        <li><p>Porsche Connect<span><img src="images/arrow.svg" alt=""></span></p></li>
-        <li><p>순정 부품 가격 조회<span><img src="images/arrow.svg" alt=""></span></p></li>
+        <li>
+            <p>Porsche E-Performance</p>
+            <p><img src="images/arrow.svg" alt=""></p>
+        </li>
+        <li>
+            <p>Porsche Connect</p>
+            <p><img src="images/arrow.svg" alt=""></p>
+        </li>
+        <li>
+            <p>순정 부품 가격 조회</p>
+            <p><img src="images/arrow.svg" alt=""></p>
+        </li>
+       
     </ul>
     </div>
-    </div>
+   
 </body>
 </html>
