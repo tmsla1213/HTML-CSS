@@ -10,7 +10,7 @@
     *{margin: 0;padding: 0;}
     a{text-decoration: none;color: #fff;}
     ul{list-style: none;}
-    header{width: 100%;max-width: 1857px;height: 100vh;background-image: url(video/webv.webp);background-repeat: no-repeat;background-size: cover;position: relative;margin: 0 auto;}
+    header{width: 100%;max-width: 1857px;height: 100vh;background-image: url(video/porscheVV.webp);background-repeat: no-repeat;background-size: cover;position: relative;margin: 0 auto;}
     header .menu{width: 90%;display: flex;justify-content: space-between;color: #fff;margin:0 auto;padding-top: 30px;}
     header .menu a img{filter: invert();width: 24px;height: 24px;vertical-align: middle;}
     header .menu p{font-size: 50px;}
@@ -66,13 +66,17 @@
     .media>ul>li .y{margin-top: 8px;}
     .media .story{display: flex;gap: 8px;}
 
-    .discover{width: 1857px;margin: 0 auto;}
+    .discover{width: 70%;margin:100px auto;}
     .discover h1{text-align: center;}
-    .discover ul{width: 100%;height: 100%;display: flex;margin: 0 auto;}
+    .discover ul{margin: 100px auto; display: flex;width: 100%;flex-wrap: wrap;gap: 20px;}
+    .discover ul li{width: 30%;height: 398.92px;margin: 0 auto; display: flex;justify-content: space-between;margin-bottom: 1;transition: 0.3s;background-size: 100%;border-radius: 20px;background-repeat: no-repeat;}
+    .discover ul li .aline{width: 95%;margin: 340px auto 0; display: flex;justify-content:space-between; }
+    .discover ul li p{color: #fff;}
     .discover ul li:first-child{background-image: url(images/discover1.jfif);}
     .discover ul li:nth-child(2){background-image: url(images/discover2.jfif);}
     .discover ul li:nth-child(3){background-image: url(images/discover3.avif);}
     .discover ul li img{width: 24px;height: 24px;}
+    .discover ul li:hover{background-size: 103%;}
 </style>
 </head>
 <body>
@@ -221,16 +225,22 @@
         <h1>DISCOVER</h1>
     <ul>
         <li>
-            <p>Porsche E-Performance</p>
-            <p><img src="images/arrow.svg" alt=""></p>
+            <div class="aline">
+                <p>Porsche E-Performance</p>
+                <p><img src="images/arrow.svg" alt=""></p>
+            </div>
         </li>
         <li>
-            <p>Porsche Connect</p>
-            <p><img src="images/arrow.svg" alt=""></p>
+            <div class="aline">
+                <p>Porsche Connect</p>
+                <p><img src="images/arrow.svg" alt=""></p>
+            </div>
         </li>
         <li>
-            <p>순정 부품 가격 조회</p>
-            <p><img src="images/arrow.svg" alt=""></p>
+            <div class="aline">
+                <p>순정 부품 가격 조회</p>
+                <p><img src="images/arrow.svg" alt=""></p>
+            </div>
         </li>
        
     </ul>
